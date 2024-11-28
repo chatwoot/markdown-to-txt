@@ -29,7 +29,12 @@ const TxtRenderer: marked.Renderer = {
 	codespan: inline,
 	br: newline,
 	del: inline,
-	link: (_0, _1, text) => text,
+	link: (href, _1, text) => {
+		if (href && href.startsWith("mention://")) {
+			return text;
+		}
+		return text;
+	},
 	image: (_0, _1, text) => text,
 	text: inline,
 	// etc.

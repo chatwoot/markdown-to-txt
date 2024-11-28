@@ -149,3 +149,12 @@ test("Strikethrough", () => {
 this`;
 	expect(markdownToTxt(original)).toEqual(expected.trim());
 });
+
+
+	test("Mentions", () => {
+	const original = `
+[@Muhsin](mention://user/1/Muhsin)`;
+	const expected = `
+@Muhsin`;
+		expect(markdownToTxt(original)).toEqual(expected.trim());
+	});

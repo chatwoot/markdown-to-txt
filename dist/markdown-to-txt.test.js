@@ -142,3 +142,10 @@ test("Strikethrough", () => {
 this`;
     expect((0, markdown_to_txt_1.default)(original)).toEqual(expected.trim());
 });
+test("Mentions", () => {
+    const original = `
+[@Muhsin](mention://user/1/Muhsin)`;
+    const expected = `
+@Muhsin`;
+    expect((0, markdown_to_txt_1.default)(original)).toEqual(expected.trim());
+});
