@@ -2,7 +2,7 @@ import { marked } from "marked";
 import escape from "lodash.escape";
 import unescape from "lodash.unescape";
 
-const block = (text: string) => text + "\n\n";
+const block = (text: string) => text + "";
 const escapeBlock = (text: string) => escape(text) + "\n\n";
 const line = (text: string) => text + "\n";
 const inline = (text: string) => text;

@@ -1,6 +1,6 @@
 {
   "name": "@chatwoot/markdown-to-txt",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Convert markdown to plain text",
   "main": "./dist/markdown-to-txt.js",
   "types": "./dist/markdown-to-txt.d.ts",

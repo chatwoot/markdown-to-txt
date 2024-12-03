@@ -7,7 +7,7 @@ exports.markdownToTxt = void 0;
 const marked_1 = require("marked");
 const lodash_escape_1 = __importDefault(require("lodash.escape"));
 const lodash_unescape_1 = __importDefault(require("lodash.unescape"));
-const block = (text) => text + "\n\n";
+const block = (text) => text + "";
 const escapeBlock = (text) => (0, lodash_escape_1.default)(text) + "\n\n";
 const line = (text) => text + "\n";
 const inline = (text) => text;
