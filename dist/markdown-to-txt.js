@@ -8,10 +8,10 @@ const marked_1 = require("marked");
 const lodash_escape_1 = __importDefault(require("lodash.escape"));
 const lodash_unescape_1 = __importDefault(require("lodash.unescape"));
 const block = (text) => text + "";
-const escapeBlock = (text) => (0, lodash_escape_1.default)(text) + "\n\n";
-const line = (text) => text + "\n";
+const escapeBlock = (text) => (0, lodash_escape_1.default)(text) + "";
+const line = (text) => text + "";
 const inline = (text) => text;
-const newline = () => "\n";
+const newline = () => "";
 const empty = () => "";
 const TxtRenderer = {
     // Block elements

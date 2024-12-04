@@ -3,10 +3,10 @@ import escape from "lodash.escape";
 import unescape from "lodash.unescape";
 
 const block = (text: string) => text + "";
-const escapeBlock = (text: string) => escape(text) + "\n\n";
-const line = (text: string) => text + "\n";
+const escapeBlock = (text: string) => escape(text) + "";
+const line = (text: string) => text + "";
 const inline = (text: string) => text;
-const newline = () => "\n";
+const newline = () => "";
 const empty = () => "";
 
 const TxtRenderer: marked.Renderer = {
