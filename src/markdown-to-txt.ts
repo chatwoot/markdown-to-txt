@@ -33,6 +33,14 @@ const TxtRenderer: marked.Renderer = {
 		if (href && href.startsWith("mention://")) {
 			return text;
 		}
+		if (href && href.startsWith("mailto:")) {
+			const encoded = href.replace("mailto:", "");
+			// Create a temporary textarea to decode HTML entities
+			const txt = document.createElement("textarea");
+			txt.innerHTML = encoded;
+			const decoded = txt.value;
+			return decoded;
+		}
 		return text;
 	},
 	image: (_0, _1, text) => text,
